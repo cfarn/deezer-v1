@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deezer</title>
-    <!-- font -->
+    <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -15,137 +15,185 @@
 <body>
     <header>
         <img src="img/logo.png" alt="logo deezer">
-        <nav>
+        <nav class="navbar">
             <a href="#">Télécharger</a>
             <a href="#">Offres</a>
-            <button>Connexion</button>
-            <button>Inscription</button>
+            <button class="btn connexion"><a href="#">Connexion</a></button>
+            <button class="btn inscription"><a href="#">Inscription</a></button>
         </nav>
     </header>
     <section class="hero">
-        <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor.</p>
-        <button>Deezer Premium</button>
-        <button>Deezer Gratuit</button>
+       <article class="txt">
+            <h1>Vos émotions méritent d'avoir leur musique.</h1>
+            <h3>Profitez de 3 mois offerts pour essayer Deezer Premium*</h3>
+            <div class="boutons">
+                <button class="btn premium"><a href="#">Deezer Premium</a></button>
+                <button class="btn gratuit"><a href="#">Deezer Gratuit</a></button>
+            </div>
+       </article>
     </section>
     <section class="intro">
-        <h2>Deezer, c'est quoi ?</h2>
-        <article>
-            <h5>Toute votre musique sit amet consectetur.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architecto, et reiciendis doloribus.</p>
-        </article>
-        <article>
-            <h5>Pas de wifi ? sit amet consectetur.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architecto, et reiciendis doloribus.</p>
-        </article>
-        <article>
-            <h5>Créez votre bibliothèque sit amet consectetur.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architecto, et reiciendis doloribus.</p>
-        </article>
-        <article>
-            <h5>Un deezer qui vous ressemble.</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architecto, et reiciendis doloribus.</p>
-        </article>
+        <img src="img/phone.jpg" alt="image smartphone">
+        <div class="txt">
+            <h2>Deezer, c'est quoi ?</h2>
+            <article>
+                <h5>Toute votre musique dans votre poche.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architecto.</p>
+            </article>
+            <article>
+                <h5>Pas de wifi ? Pas de problème.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architectos.</p>
+            </article>
+            <article>
+                <h5>Créez votre bibliothèque musicale.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam.</p>
+            </article>
+            <article>
+                <h5>Un deezer qui vous ressemble.</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo sit sapiente natus distinctio, veritatis debitis sed ipsam architecto.</p>
+            </article>
+        </div>
     </section>
     <section class="bandeau">
-        <h2>Toujours avec vous</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quia qui facere eum, nemo placeat, repellat eligendi quae quis animi, enim dolorum quo nulla consectetur ratione distinctio illum nisi quod!</p>
+        <aside class="icons">
+            <i class="bi bi-laptop"></i>
+            <i class="bi bi-tablet"></i>
+            <i class="bi bi-phone"></i>
+            <i class="bi bi-watch"></i>
+            <i class="bi bi-speaker"></i>
+            <i class="bi bi-tv"></i>
+            <i class="bi bi-controller"></i>
+            <i class="bi bi-hr"></i>
+            
+        </aside>
+        <article>
+            <h2>Toujours avec vous</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quia qui facere eum, nemo placeat, repellat eligendi quae quis animi, enim dolorum quo nulla consectetur ratione distinctio illum nisi quod!</p>
+        </article>
     </section>
     <section class="prices">
         <h2>Profitez de votre musique</h2>
-        <div>
+        <div class="prices-container">
             <article>
-                <h3>Deezer Gratuit</h3>
-                <h4>0.00€</h4>
-                <p>/mois</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <button>S'inscrire</button>
-                <a href="#">+ d'infos</a>
+                <h4>Deezer Gratuit</h4>
+                <h3>0.00€</h3>
+                <h6>/mois</h6>
+                <div class="prices-txt">
+                    <p class="check"><i class="bi bi-check"></i>73 millions de titres</p>
+                    <p class="check"><i class="bi bi-check"></i>Lecture aléatoire</p>
+                    <p class="cross"><i class="bi bi-x"></i>Sans publicité</p>
+                    <p class="cross"><i class="bi bi-x"></i></i>Zappez en illimité</p>
+                    <p class="cross"><i class="bi bi-x"></i>Mode hors-connexion</p>
+                    <p class="cross"><i class="bi bi-x"></i>6 comptes</p>
+                </div>
+                <button class="prices-btn btn-free"><a href="#">S'inscrire</a></button>
+                <a href="#" class="info">+ d'infos</a>
+            </article>
+            <article class="blue">
+                <h4>Deezer Premium</h4>
+                <h3>9.99€</h3>
+                <h6>/mois</h6>
+                <div class="prices-txt">
+                    <p class="check blue"><i class="bi bi-check"></i>73 millions de titres</p>
+                    <p class="check blue"><i class="bi bi-check"></i>Sans publicité</p>
+                    <p class="check blue"><i class="bi bi-check"></i>Zappez en illimité</p>
+                    <p class="check blue"><i class="bi bi-check"></i>Mode hors-connexion</p>
+                    <p class="blue-cross"><i class="bi bi-x"></i>6 comptes</p>
+                </div>
+                <a href="#" class="info info-blue">3 mois offerts</a>
+                <button class="prices-btn btn-pay"><a href="#">J'en profite</a></button>
+                <a href="#" class="info info-blue">+ d'infos</a>
             </article>
             <article>
-                <h3>Deezer Premium</h3>
-                <h4>9.99€</h4>
-                <p>/mois</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <a href="#">3 mois offerts</a>
-                <button>J'en profite</button>
-                <a href="#">+ d'infos</a>
-            </article>
-            <article>
-                <h3>Deezer Famille</h3>
-                <h4>14.99€</h4>
-                <p>/mois</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <p>Lorem, ipsum dolor.</p>
-                <a href="#">1 mois offert</a>
-                <button>J'en profite</button>
-                <a href="#">+ d'infos</a>
+                <h4>Deezer Famille</h4>
+                <h3>14.99€</h3>
+                <h6>/mois</h6>
+                <div class="prices-txt">
+                    <p class="check"><i class="bi bi-check"></i>73 millions de titres</p>
+                    <p class="check"><i class="bi bi-check"></i>Sans publicité</p>
+                    <p class="check"><i class="bi bi-check"></i>Zappez en illimité</p>
+                    <p class="check"><i class="bi bi-check"></i>Mode hors-connexion</p>
+                    <p class="check"><i class="bi bi-check"></i>6 comptes</p>
+                </div>
+                <a href="#" class="info">1 mois offert</a>
+                <button class="prices-btn btn-pay"><a href="#">J'en profite</a></button>
+                <a href="#" class="info">+ d'infos</a>
             </article>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis dolorum unde tempore blanditiis eos sapiente et officiis, soluta dolor maiores!</p>
+        <p class="legal">Lorem ipsum dolor, sit amet consectetur adipisicing elit. At minima omnis soluta quidem, optio et necessitatibus veritatis ullam reprehenderit dolorum? Optio illo ullam unde, aliquam nihil reiciendis eaque quam quod. Voluptas explicabo amet unde iste fuga maiores dolorum animi incidunt illo esse facilis ullam neque eveniet, corporis officiis nesciunt ipsum. Eveniet dignissimos voluptates dolorum error explicabo.</p>
     </section>
-    <section class="abo">
+    <section class="subscribe">
         <article>
             <div>
-                <h3>Abonnement annuel</h3>
+                <h4>Abonnement annuel <span class="promo">-25%</span></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, excepturi.</p>
                 <a href="#">En savoir plus</a>
             </div>
-            <button>S'abonner</button>
+            <button class="btn btn1"><a href="#">S'abonner</a></button>
         </article>
         <article>
             <div>
-                <h3>Deezer hifi</h3>
+                <h4>Deezer hifi</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, excepturi.</p>
             </div>
-            <button>En savoir plus</button>
+            <button class="btn btn2"><a href="">En savoir plus</a></button>
         </article>
         <article>
             <div>
-                <h3>Deezer étudiant</h3>
+                <h4>Deezer étudiant <span class="promo">-50%</span></h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, excepturi.</p>
             </div>
-            <button>En savoir plus</button>
+            <button class="btn btn3"><a href="#">En savoir plus</a></button>
         </article>
     </section>
     <footer>
-        <section>
-            <img src="" alt="">
-            <img src="" alt="">
+        <section class="badges">
+            <a href="https://www.apple.com/fr/store"><img src="img/Download_on_the_App_Store_Badge_FR_RGB_blk_100517.svg" class="apple" alt="badge apple store"></a>
+            <a href="https://play.google.com/store/apps?hl=fr&gl=US"><img src="img/google-play-badge.png" class="google" alt="badge google store"></a>
         </section>
-        <nav class="nav1">
-            <a href="#">Deezer</a>
-            <a href="#">Offres</a>
-            <a href="#">Fonctionnalités</a>
-            <a href="#">Appareils</a>
-            <a href="#">Aide</a>
-            <a href="#">À propos</a>
-            <a href="#">Carrières</a>
-        </nav>
-        <nav class="nav2">
-            <a href="#">Explorer</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-        </nav>
-        <nav class="nav3">
-            <a href="#">Qui sommes-nous ?</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-            <a href="#">Lorem, ipsum dolor.</a>
-        </nav>
+        <section class="nav">
+            <nav class="nav1">
+                <a href="#" class="nav-title">Deezer</a>
+                <a href="#" class="nav-p">Offres</a>
+                <a href="#" class="nav-p">Fonctionnalités</a>
+                <a href="#" class="nav-p">Appareils</a>
+                <a href="#" class="nav-p">Aide</a>
+                <a href="#" class="nav-p">À propos</a>
+                <a href="#" class="nav-p">Carrières</a>
+            </nav>
+            <nav class="nav2">
+                <a href="#" class="nav-title">Explorer</a>
+                <a href="#" class="nav-p">Tous les univers</a>
+                <a href="#" class="nav-p">Top écoute</a>
+                <a href="#" class="nav-p">Sortie la plus populaire</a>
+                <a href="#" class="nav-p">Nouveautés</a>
+                <a href="#" class="nav-p">On reste à la maison</a>
+            </nav>
+            <nav class="nav3">
+                <a href="#" class="nav-title">Qui sommes-nous ?</a>
+                <a href="#" class="nav-p">Musiciens et podcasteurs</a>
+                <a href="#" class="nav-p">Développeurs</a>
+                <a href="#" class="nav-p">Presse</a>
+            </nav>
+            <nav class="nav4">
+                <a href="#" class="nav-title">Légal</a>
+                <a href="#" class="nav-p">Mentions légales</a>
+                <a href="#" class="nav-p">Lorem, ipsum dolor.</a>
+                <a href="#" class="nav-p">Lorem, ipsum dolor.</a>
+                <a href="#" class="nav-p">Cookies</a>
+            </nav>
+        </section>
+        <section class="logos">
+            <aside class="social">
+                <a href="https://fr-fr.facebook.com/"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.twitter.com"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.youtube.com"><i class="bi bi-youtube"></i></a>
+            </aside>
+            <img src="img/logo.png" alt="logo deezer">
+            <p>&copy;2021 Deezer</p>
+
+        </section>
     </footer>
 </body>
 </html>
